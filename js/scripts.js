@@ -35,4 +35,13 @@ var final = cipher4(sentence) + cipher3(sentence, cipher2);
 function reverse(final){
 return final.split('').reverse().join('');
 }
+
 alert(reverse(final));
+
+$(".original").click(function() {
+  alert(sentence)
+});
+
+$(".cipher").click(function() {
+  alert(reverse(final))
+});
